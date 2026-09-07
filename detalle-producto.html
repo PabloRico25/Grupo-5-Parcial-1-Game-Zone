@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GameZone - Carrito</title>
+  <title>GameZone - Detalle de producto</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,45 +25,24 @@
   </nav>
 
   <main>
+    <section id="detalle-producto">
+      <!-- Contenido generado por detalle-producto.js según el ?id= de la URL -->
+    </section>
+
     <section>
-      <h2>Tu carrito</h2>
-
-      <table class="admin-tabla" id="tabla-carrito">
-        <thead>
-          <tr>
-            <th>Producto</th>
-            <th>Precio</th>
-            <th>Cantidad</th>
-            <th>Subtotal</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-
-      <p id="carrito-vacio" hidden>Tu carrito está vacío. <a href="catalogo.html">Ver catálogo</a></p>
-
-      <div class="carrito-resumen">
-        <label for="cupon">Cupón de descuento</label>
-        <input type="text" id="cupon" placeholder="Ej: GAMEZONE10">
-        <button type="button" id="btn-cupon">Aplicar</button>
-        <p class="error" id="error-cupon"></p>
-
-        <p class="precio" id="carrito-total">Total: $0</p>
-        <button type="button" id="btn-pagar">Pagar</button>
-        <p class="error" id="carrito-mensaje"></p>
-      </div>
+      <h2>Productos relacionados</h2>
+      <div class="juegos-grid" id="relacionados"></div>
     </section>
   </main>
 
   <footer>
-    <p>GameZone &copy; 2026</p>
+    <p>GameZone &copy 2026</p>
     <p>Contacto: contacto@gamezone.cl | +56 9 1234 5678</p>
   </footer>
 
   <script src="productos-data.js"></script>
   <script src="carrito-core.js"></script>
   <script src="sesion.js"></script>
-  <script src="carrito.js"></script>
+  <script src="detalle-producto.js"></script>
 </body>
 </html>
