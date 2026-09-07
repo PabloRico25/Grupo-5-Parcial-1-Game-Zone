@@ -1,3 +1,32 @@
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameZone - Catálogo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1><img src="images/logo-gamezone.jpg" alt="Logo GameZone" class="logo"> GameZone</h1>
+    <p>Tu tienda de videojuegos, rápida y desde el celular</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="registro.html">Registro</a>
+    <a href="carrito.html">Carrito (<span id="carrito-contador">0</span>)</a>
+    <a href="ingreso.html" id="nav-ingreso">Ingreso</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Catálogo de juegos</h2>
       <div class="juegos-grid">
         <article class="juego-card" id="evil-within">
           <img src="images/juego-evil-within.jpg" alt="Portada de The Evil Within">
@@ -44,3 +73,16 @@
           <button class="btn-carrito" type="button">Agregar al carrito</button>
         </article>
       </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>GameZone &copy 2026</p>
+    <p>Contacto: contacto@gamezone.cl | +56 9 1234 5678</p>
+  </footer>
+
+  <script src="carrito-core.js"></script>
+  <script src="sesion.js"></script>
+  <script src="catalogo.js"></script>
+</body>
+</html>

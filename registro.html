@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameZone - Registro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>GameZone</h1>
+    <p>Tu zona geek y de videojuegos favorita</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="registro.html">Registro</a>
+    <a href="carrito.html">Carrito (<span id="carrito-contador">0</span>)</a>
+    <a href="ingreso.html" id="nav-ingreso">Ingreso</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Crea tu cuenta</h2>
+      <p>Regístrate con tu correo institucional para acceder a descargas y contenido exclusivo.</p>
+
+      <form id="form-registro" novalidate>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" autocomplete="name" maxlength="100">
+        <p class="error" id="error-nombre"></p>
+
+        <label for="correo">Correo (solo @duoc.cl)</label>
+        <input type="email" id="correo" name="correo" autocomplete="email" maxlength="60" placeholder="nombre@duoc.cl">
+        <p class="error" id="error-correo"></p>
+
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" name="contrasena" autocomplete="new-password">
+        <p class="ayuda">Mínimo 10 caracteres, con mayúscula, minúscula, número y símbolo (ej: @#$%).</p>
+        <p class="error" id="error-contrasena"></p>
+
+        <label for="confirmar">Confirmar contraseña</label>
+        <input type="password" id="confirmar" name="confirmar" autocomplete="new-password">
+        <p class="error" id="error-confirmar"></p>
+
+        <label for="telefono">Teléfono (opcional)</label>
+        <input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="+56 9 1234 5678">
+        <p class="error" id="error-telefono"></p>
+
+        <label for="region">Región</label>
+        <select id="region" name="region">
+          <option value="">Selecciona una región</option>
+        </select>
+        <p class="error" id="error-region"></p>
+
+        <label for="comuna">Comuna</label>
+        <select id="comuna" name="comuna">
+          <option value="">Selecciona una región primero</option>
+        </select>
+        <p class="error" id="error-comuna"></p>
+
+        <label>Género favorito</label>
+        <div class="checklist">
+          <label><input type="checkbox" name="genero" value="FICCION"> Ficción</label>
+          <label><input type="checkbox" name="genero" value="NO_FICCION"> No ficción</label>
+          <label><input type="checkbox" name="genero" value="MISTERIO"> Misterio</label>
+          <label><input type="checkbox" name="genero" value="TERROR"> Terror</label>
+          <label><input type="checkbox" name="genero" value="SUSPENSO"> Suspenso</label>
+          <label><input type="checkbox" name="genero" value="HISTORIA"> Historia</label>
+        </div>
+        <p class="error" id="error-genero"></p>
+
+        <button type="submit">Crear cuenta</button>
+        <p class="error" id="form-exito"></p>
+      </form>
+
+      <p class="form-extra">¿Ya tienes cuenta? <a href="ingreso.html">Inicia sesión</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>GameZone &copy 2026</p>
+    <p>Contacto: contacto@gamezone.cl | +56 9 1234 5678</p>
+  </footer>
+
+  <script src="carrito-core.js"></script>
+  <script src="sesion.js"></script>
+  <script src="region-comuna.js"></script>
+  <script src="registro.js"></script>
+</body>
+</html>
